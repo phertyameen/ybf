@@ -1,10 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2, h3, h4, h5{
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2587be;
+}
+strong{
+    font-weight: 400;
+}
+em{
+    font-style: normal;
+    font-weight: 400;
+}
+@keyframes zoomIn {
+    from {
+        right: -250px;
+      }
+      to {
+        right: 0;
+      }
+}
+@keyframes fadeOut {
+    from {
+      right: 0;
+    }
+    to {
+      right: -250px;
+    }
+}
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+button{
+    transition: all 300ms ease-in;
+}
 header{
-    /* height: 15vh; */
     height: 100vh;
     background-color: black !important;
 }
@@ -16,6 +58,47 @@ nav{
     padding: 0 !important;
     box-shadow: 2px 2px 2px rgba(12, 5, 15, 0.2);
 }
+.hero_div {
+    width: 100%;
+    background-color: #333;
+    opacity: 0.8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.navDiv {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarBrand img {
+    width: 35%;
+  }
+  .navbarToggleIcon {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    opacity: 0.6;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  .navbarNav {
+    display: flex;
+    gap: 4rem;
+    align-items: start;
+  justify-content: center;
+  }
+  li a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .navbarNav {
+    list-style: none;
+    display: flex;
+  }
 header #carouselExampleCaptions{
     height: 80%;
     margin-bottom: 2rem !important;
@@ -94,9 +177,6 @@ nav div a img{
     margin-block: 4rem;
     text-align: justify;
 }
-.introChilddiv h4{
-    color: #2587be;
-}
 .introChilddiv:last-child{
     flex-direction: row-reverse;
 }
@@ -142,7 +222,188 @@ nav div a img{
 .founderdiv .textdiv h4, .coFounderdiv .textdiv h4{
     text-align: center;
 }
+/* sect3Pdiv */
+.sect3div{
+    width: 100%;
+    margin-inline: auto;
+    margin-block: 4rem;
+    gap: 2rem;
+}
+.sect3div h3{
+    text-align: center;
+}
+.sect3div .sect3Pdiv{
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.sect3Pdiv div{
+    height: max-content;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    box-shadow: 2px 2px 2px 2px rgba(12, 5, 15, 0.1);
+}
+.sect3Pdiv div:hover{
+    margin-top: -4rem;
+    transition: all 500ms ease;
+    background-color: rgb(214, 218, 221);
+    box-shadow: 2px 2px 2px 2px rgba(100, 44, 124, 0.2);
+}
+.sect3Pdiv .oddDiv{
+    background-color: rgb(235, 239, 242);
+}
+.sect3Pdiv{
+    margin-top: 6rem;
+}
+.sect3Pdiv h4{
+    color: rgb(0, 200, 255);
+    font-size: 30px;
+}
+.sect4Div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-inline: auto;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+.sect4Div1ImgDiv{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+#imgDivId1{
+    background-image: url('https://www.railway-technology.com/wp-content/uploads/sites/13/2023/03/chenab-bridge.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+#imgDivId2{
+    background-image: url('http://www.mingor.net/images-large/gleneagle-jarrahdale-road-june-2014.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 80%;
+    width: 40%;
+}
+.sect4Div1TextDiv button{
+    background-color: #2587be;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem 3rem 0 0;
+    color: #fff;
+}
+/* footer */
+footer{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    background-color: #2587be;
+}
+.footer_p{
+    color: white;
+}
+.parent_footer_div{
+    display: flex;
+    justify-content: space-around;
+}
+.child_footer_div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+.child_footer_div ul a{
+    color: white;
+    text-decoration: none;
+    padding-block: 1rem;
+}
+.footer_form_div{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.footer_form_div form{
+    width: 35%;
+    margin-right: 5rem;
+    
+}
+.footer_form_div form input{
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    padding: 1.1rem;
+}
+.footer_form_div form p{
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+#footer_btn_div{
+    position: relative;
+}
+#footer_btn_div button{
+    background-color: #2587be;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 2.12rem;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 13.5rem;
+    padding-bottom: 1.2rem;
+    padding-top: 0.3rem;
+    border-radius: 5px;
+}
+footer .child_p{
+    background-color: white;
+    margin-top: 3.5rem;
+    padding-block: 0.3rem;
+    text-align: center;
+    color: #121212;
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (max-width: 650px){
+        .navbarNav {
+          flex-direction: column;
+          position: absolute;
+          top: 3.2rem;
+          right: 0px;
+          width: 70%;
+          height: 70vh;
+          text-align: end;
+          background-color: #333;
+          gap: 1.5rem;
+          border-bottom-left-radius: 15px;
+          display: none;
+          transition: right 500ms ease;
+        }
+        .navbarToggleIcon{
+          display: flex;
+        }
+        .navItem {
+          margin: 10px 0;
+        }
+        .menuIcon{
+          color: black;
+        }
     nav div a img{
         border-radius: 20%;
         /* height: 70%; */
@@ -169,8 +430,6 @@ nav div a img{
         width: 90%;
         border-radius:10px;
     }
-
-
     .founderSec{
         width: 100%;
     }
@@ -179,5 +438,112 @@ nav div a img{
     }
     .founderdiv img, .coFounderdiv img{
         height: 70%;
+    }
+    .sect3div{
+        width: 100vw;
+        margin-inline: auto;
+        margin-block: 4rem;
+        gap: 1rem;
+    }
+    .sect3div .sect3Pdiv{
+        margin-top: 1rem;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect3Pdiv div{
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+    .sect4Div1{
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 98%;
+    }
+    .sect4Div1ImgDiv{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    /* footer */
+    footer{
+        height: max-content;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .child_footer_div img{
+        padding-left: 7rem;
+        padding-bottom: 3rem;
+    }
+    .parent_footer_div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content:center;
+    }
+    .child_footer_div ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .footer_form_div{
+        height: fit-content;
+        width: 100%;
+    }
+    .footer_form_div form{
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .footer_form_div form input{
+        width: 80%;
+        margin-inline: auto;
+    }
+    #footer_btn_div{
+        position: relative;
+    }
+    #footer_btn_div button{
+        bottom: 0.5rem;
+        left: 14rem;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    footer .child_p{
+        margin-top: 0.2rem;
+        justify-content: space-between;
+        padding-inline: 0.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        /* animation: moveRightToLeft 10s linear infinite; */
+    }
+    .footer_p span {
+        display: inline-block; /* Display each <span> as a flex container */
+        align-items: center; /* Center content vertically within each span */
+        animation: moveRightToLeft 10s linear infinite;
+        width: 100%;
+    }
+}
+/* footer responsiveness for tabs*/
+@media screen and (min-width: 576px) and (max-width: 920px){
+    footer{
+        height: max-content;
+    }
+    .footer_form_div form{
+        width: 50%;
+    }
+    .footer_form_div form input{
+        width: 100%;
+    }
+    #footer_btn_div button{
+        left: 18rem;
     }
 }
