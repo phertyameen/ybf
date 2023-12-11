@@ -26,3 +26,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     navbarToggler.addEventListener('click', handleNavToggle);
 });
+
+const founderdiv = document.querySelector('.founderdiv')
+const coFounderdiv = document.querySelector('.coFounderdiv')
+
+founderdiv.addEventListener('mouseover', e => {
+    coFounderdiv.style.display ='none'
+    founderdiv.style.color ='#f6fcfe'
+
+    founderdiv.addEventListener('mouseout', e => {
+        coFounderdiv.style.display = ''
+    });
+})
+coFounderdiv.addEventListener('mouseover', e => {
+    founderdiv.style.display ='none'
+    coFounderdiv.style.color = '#f6fcfe'
+
+    // Handle mouseout for coFounderdiv
+coFounderdiv.addEventListener('mouseout', e => {
+    founderdiv.style.display = ''
+});
+})
