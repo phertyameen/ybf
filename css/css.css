@@ -145,6 +145,13 @@ header #carouselExampleCaptions{
 .carousel-item img{
     height: 100vh !important;
 }
+.carousel-caption{
+    width: 80% !important;
+    height: max-content !important;
+}
+.carousel-caption h5{
+    letter-spacing: 0.5px;
+}
 .nav-item{
     font-weight: 500;
     margin-inline: 1rem;
@@ -408,6 +415,21 @@ footer{
     gap: 1rem;
     text-align: center;
 }
+#socialMediaIcons{
+    flex-direction: row;
+    gap: 1.2rem;
+    align-items: start;
+}
+#socialMediaIcons li i{
+    font-size: 1.5rem;
+    transition: all 700ms ease;
+}
+#socialMediaIcons li i:hover{
+    color: #757676;
+}
+.smallScreen{
+    display: none;
+}
 .child_footer_div ul a{
     color: var(--white);
     text-decoration: none;
@@ -424,10 +446,18 @@ footer{
     margin-right: 5rem;    
 }
 .footer_form_div form input{
-    width: 80%;
+    width: 90%;
     border-radius: 5px;
     border: none;
     padding: 1.1rem;
+    padding-right: 9.5rem;
+}
+.footer_form_div form input:hover{
+    box-shadow: 2px 2px 2px 2px rgba(4, 4, 4, 0.33);
+}
+.footer_form_div form input:active, .footer_form_div form input:focus{
+    outline: none;
+    box-shadow: inset 2px 2px 2px 2px rgba(13, 91, 106, 0.33);
 }
 .footer_form_div form p{
     text-align: center;
@@ -444,10 +474,14 @@ footer{
     height: 2.12rem;
     position: absolute;
     bottom: 0.8rem;
-    left: 13.5rem;
+    left: 16rem;
     padding-bottom: 1.2rem;
     padding-top: 0.3rem;
     border-radius: 5px;
+}
+#footer_btn_div button:hover{
+    background-color: var(--dark-primary);
+    border-bottom: 1px solid var(--black);
 }
 footer .child_p{
     background-color: var(--white);
@@ -570,10 +604,29 @@ footer .child_p{
         gap: 1rem;
     }
     #footer_logo{
-        width: 60%;
-        height: 10rem; 
-        padding-left: 7rem;
-     }
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_logo img{
+        width: 40%;
+        margin-inline: auto;
+    }
+    #socialMediaIcons{
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    #socialMediaIcons li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .smallScreen{
+        display: block;
+    }
     .parent_footer_div{
         display: flex;
         flex-direction: column;
@@ -593,12 +646,14 @@ footer .child_p{
         margin-inline: auto; 
     }
     .footer_form_div form input{
-        width: 90%;
+        width: 100%;
+        padding-right: 8rem;
         margin-inline: auto;
     }
     #footer_btn_div button{
         bottom: 0.5rem;
-        right: 0;
+        left: 0;
+        margin-left: 15rem;
     }
     footer .child_p{
         margin-top: 0.2rem;

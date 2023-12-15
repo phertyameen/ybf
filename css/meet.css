@@ -51,6 +51,247 @@
     border-bottom-right-radius: 35px;
     margin-block: 2rem;
 }
+
+/* blog html post */
+#blogHeroDiv{
+    margin-block: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom, rgba(4, 4, 4, 0.6) 60%, rgba(4, 4, 4, 0.35) 100%), url('../assets/blog_pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 0.6px;
+}
+#blogHeroh2{
+    color: var(--white);
+}
+#blogHeroDiv h2{
+    color: var(--white);
+}
+.mainHeader{
+    height: 70vh;
+    margin-block: 4rem;
+}
+.blogsSect{
+    width: 85%;
+    border-radius: 0.5rem;
+    box-shadow: 3px 2px 3px 3px rgba(13, 91, 106, 0.73);
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding-block: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.blogsSect h2{
+    text-align: center;
+}
+.parentNewsDiv{
+    margin-top: 1rem;
+}
+.newsDiv{
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px 1px rgba(13, 91, 106, 0.43);
+}
+.carousel-inner{
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+}
+.carousel-inner .carousel-item img{
+    height: 50vh !important;
+}
+.stories{
+    margin: 1rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+    height: max-content;
+}
+.entreprenualEdu, .eduEmpower, .northFlorish{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.entreprenualEdu{
+    background-image: url('../assets/sophisticated-womenjpg.jpeg');
+}
+.eduEmpower{
+    background-image: url('../assets/kebbi_grant_img5.jpg');
+}
+.northFlorish{
+    background-image: url('../assets/kebbi_grant_img1.jpg');
+}
+
+/* blogFeedbackSection */
+.blogFeedbackSection{
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px 1px rgba(13, 91, 106, 0.43);
+}
+.blogFeedbackSection h3, .center{
+    text-align: center;
+}
+.blogStoryForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.blogStoryForm textarea{
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    margin-inline: auto;
+    border-radius: 0.2rem;
+    box-shadow: inset 2px 2px 2px 1px rgba(13, 91, 106, 0.53);
+}
+.blogStoryForm textarea:hover, .blogStoryForm input:hover{
+    border: 1px solid var(--secondary);
+    box-shadow: 2px 2px 2px 1px rgba(13, 91, 106, 0.53);
+}
+.blogStoryForm textarea:focus, .blogStoryForm input:focus{
+    border: 1px solid var(--secondary);
+    box-shadow: inset 2px 2px 2px 1px rgba(13, 91, 106, 0.53);
+}
+.blogStoryForm textarea:active, .blogStoryForm input:active{
+    border: 1px solid var(--secondary);
+    box-shadow: inset 2px 2px 2px 1px rgba(13, 91, 106, 0.53);
+}
+.blogStoryForm .proofPicture{
+    border-radius: 0.2rem;
+    border: none;
+    width: 42%;
+    margin-left: 60%;
+    margin-block: 2rem;
+}
+.proofPicture p{
+    color: var(--tertiary);
+}
+.blogStoryForm button{
+    width: max-content;
+    padding: 1rem 5rem;
+    margin-bottom: 2rem;
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    margin-inline: auto;
+}
+.blogStoryForm button:hover{
+    background-color: var(--dark-secondary);
+    box-shadow: 2px 2px 2px 2px rgba(14,14,14, 0.3);
+}
+.blogStoryForm button:active{
+    color: var(--black);
+    background-color: var(--light-secondary);
+    box-shadow: inset 2px 2px 2px 2px rgba(125,194,223, 0.2);
+}
+.blogStoryForm button:focus{
+    outline: 2px solid var(--dark-secondary);
+    offset: 2px;
+    box-shadow: inset 2px 2px 2px 2px rgba(13, 36, 45, 0.8);
+}
+
+/* contact us page */
+.userInfo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: auto;
+}
+.userInfo input{
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    outline: none;
+    padding: 0.3rem 0.5rem;
+}
+#lineBreak{
+    margin-block: 4rem;
+    position: relative;
+}
+#or{
+    position: absolute;
+    top: -1.2rem;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: var(--white);
+}
+.address{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.address p{
+    margin: 0 3rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    line-height: 2rem;
+    letter-spacing: 1px;
+    background-color: var(--primary);
+}
+.address p b{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.callMail{
+    width: 40%;
+    height: 30vh;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 2rem;
+}
+.callMail a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    width: max-content;
+    color: var(--tertiary);
+    transition: all 700ms ease;
+}
+.callMail a:hover{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--light-primary);
+    box-shadow: 2px 2px 2px 2px rgba(13, 91, 106, 0.33);
+}
+.callMail a:focus{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--light-secondary);
+    box-shadow: inset 2px 2px 2px 2px rgba(13, 91, 106, 0.33);
+}
+.callMail a:active{
+    color: var(--black);
+}
+.callMail a i{
+    font-size: 2rem;
+    color: var(--dark-primary);
+}
+
 @media screen and (max-width: 650px) {
     #teamHeroDiv{
         gap: 1rem;
@@ -70,4 +311,48 @@
         border-bottom-right-radius: 35px;
         margin-block: 1rem;
     }
+
+    /* blog page */
+    #blogHeroDiv{
+        margin-block: 0;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+    .mainHeader{
+        height: max-content;
+        margin: 0;
+    }
+    #blogHeroDiv h2{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    #blogHeroDiv p{
+        width: 95%;
+        justify-content: center;
+        text-align: justify;
+    }
+    .blogsSect{
+        width: 100%;
+    }
+    .blogStoryForm .proofPicture{
+        margin-left: 50%;
+        width: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* contact us page */
+    .userInfo{
+        width: 100%;
+    }
+    .userInfo input{
+        width: 90%;
+        border-radius: 5px;
+    }
+    .address p{
+        margin: 0 1rem;
+        /* padding: 0.5rem; */
+    }
+    .callMail, .address{
+        flex-direction: column;
+    }    
 }
