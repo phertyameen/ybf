@@ -145,28 +145,29 @@ header #carouselExampleCaptions{
 .carousel-item img{
     height: 100vh !important;
 }
-.carousel-caption{
-    width: 80% !important;
-    height: max-content !important;
-}
-.carousel-caption h5{
-    letter-spacing: 0.5px;
-}
+/* .carousel-inner{
+    margin-right: 1rem !important;
+} */
 .nav-item{
     font-weight: 500;
     margin-inline: 1rem;
     font-size: 1.2rem;
 }
 .carousel-caption{
-    width: 40%;
+    width: 80%;
     height: 50%;
     margin-top: 0;
-    text-align: start;
+    text-align: center;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .carousel-caption h5{
     color: var(--white);
     font-size: 2.5rem;
+    letter-spacing: 0.5px;
 }
 .carousel-caption p{
     font-size: 1.5rem;
@@ -278,6 +279,13 @@ header #carouselExampleCaptions{
 }
 .founderdiv .textdiv h4, .coFounderdiv .textdiv h4{
     text-align: center;
+}
+/* about section */
+#aboutSect{
+    width: 90%;
+    text-align: justify;
+    margin-inline: auto;
+    margin-block: 2rem;
 }
 /* sect3Pdiv */
 .sect3div{
@@ -529,6 +537,35 @@ footer .child_p{
         justify-content: space-between;
         padding-inline: 0.2rem;
         margin-inline: 0;
+    }
+    .carousel-caption{
+        width: 100% !important;
+        height: max-content !important;
+        margin-left: -3.5rem !important;
+        flex-direction: column;
+
+    }
+    .carousel-caption div{
+        display: flex;
+    }
+    .carousel-caption h5{
+        letter-spacing: 0.2px;
+        font-size: 1.5rem;
+    }
+    .heroButton{
+        width: max-content;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    .heroButton button:first-child{
+        margin-left: 1rem !important;
+    }
+    #aboutSect{
+        width: 98%;
+        text-align: justify;
+        margin-inline: auto;
+        margin-block: 2rem;
     }
     .introductorySec{
         width: 97%;
