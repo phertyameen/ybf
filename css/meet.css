@@ -50,6 +50,13 @@
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
     margin-block: 2rem;
+    box-shadow: 2px 2px 2px 2px rgba(13, 91, 106, 0.2);
+    transition: all 700ms ease;
+}
+.ybifMember img:hover{
+    width: 85%;
+    height: 65%;
+    box-shadow: 2px 2px 2px 2px rgba(13, 91, 106, 0.5);
 }
 
 /* blog html post */
@@ -125,13 +132,19 @@
     background-repeat: no-repeat;
 }
 .entreprenualEdu{
-    background-image: url('../assets/sophisticated-womenjpg.jpeg');
+    background-image: url('../assets/entrepreneurship2.jpeg');
 }
 .eduEmpower{
-    background-image: url('../assets/kebbi_grant_img5.jpg');
+    background-image: url('../assets/noPorverty.png');
 }
 .northFlorish{
     background-image: url('../assets/kebbi_grant_img1.jpg');
+}
+#kebbiSokotoGrantLastTextDiv{
+    height: inherit;
+}
+#kebbiSokotoGrantLastTextDiv p{
+    margin-bottom: 0 !important;
 }
 
 /* blogFeedbackSection */
@@ -338,6 +351,13 @@
         margin-left: 50%;
         width: 70%;
         transform: translate(-50%, -50%);
+    }
+    .newsDiv{
+        width: 97%;
+    }
+    #kebbiSokotoGrantLastTextDiv p{
+        font-size: 1.1rem;
+        margin-bottom: 0 !important;
     }
 
     /* contact us page */
