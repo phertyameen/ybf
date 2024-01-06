@@ -17,7 +17,7 @@
   <header>
     <nav class="hero_div">
       <div class="navDiv">
-        <a class="navbarBrand" href="../index.html"><img src="../assets/logo_desktop.png" alt="ybif logo" /></a>
+        <a class="navbarBrand" href="../index.html"><img src="../assets/ybif_white_logo.png" alt="ybif logo" /></a>
         <div id="navbarNav">
           <span class="navbarToggleIcon">
             <i class="fa-solid fa-bars menuIcon"></i>
@@ -101,7 +101,7 @@
           <img src="../assets/faisal.jpg" alt="ybif Executive Secretary">
           <div class="ybifMemberRole">
             <h4>Faisal Hussain Abdullahi</h4>
-            <p>Executive Secretary</p>
+            <p>Secretary</p>
           </div>
         </div>
         <div class="ybifMember col-6 col-md-3">
@@ -274,13 +274,20 @@
       </div>
     </div>
     <div class="footer_form_div">
-      <form action="post">
+      <form method="post" id="newsLetterForm">
         <p class="footer_p">Subscribe to our Newsletter</p>
-        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Email Address" id="newsletterInput">
         <div id="footer_btn_div">
           <button type="submit" class="footer_p">Submit</button>
         </div>
       </form>
+    </div>
+    <div id="popUpParent">
+      <div id="popUp">
+        <i class="fa-solid fa-xmark" id="exitMark"></i>
+        <h4>Success! <i class="fa-solid fa-face-smile"></i></h4>
+        <p>We've received your email address and will notify you of our weekly/monthly update</p>
+      </div>
     </div>
     <p class="footer_p child_p">
       <span>YBIF_org Ltd 2023 &copy; All rights reserved. <i class="fa-solid fa-globe"></i> English</span>
@@ -289,5 +296,29 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 <script src="../index.js"></script>
+<script>
+
+const founderdiv = document.querySelector('.founderdiv')
+const coFounderdiv = document.querySelector('.coFounderdiv')
+
+founderdiv.addEventListener('mouseover', e => {
+    coFounderdiv.style.display ='none'
+    founderdiv.style.color ='#f6fcfe'
+
+    founderdiv.addEventListener('mouseout', e => {
+        coFounderdiv.style.display = ''
+    });
+})
+coFounderdiv.addEventListener('mouseover', e => {
+    founderdiv.style.display ='none'
+    coFounderdiv.style.color = '#f6fcfe'
+
+    // Handle mouseout for coFounderdiv
+coFounderdiv.addEventListener('mouseout', e => {
+    founderdiv.style.display = ''
+});
+})
+
+</script>
 
 </html>
